@@ -18,6 +18,7 @@
     </div>
   </div>
 
+  <!-- STUDENT LOGIN FORM -->
   <div id="student-login" class="modal form-container">
       <form class="modal-content animate" method="post">
           <div class="close-button-container">
@@ -26,30 +27,31 @@
           <h2>Hey there!</h2>
           <div class="fields-container">
           <div class="field-container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label for="email"><b>University email ID </b><span id="emailid" style="color: red;"></span></label>
+              <input type="text" placeholder="Enter university email" name="email" required>
           </div>
 
           <div class="field-container">
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label for="pw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="pw" required>
           </div>
               
-          <button type="submit">Login</button>
+          <button type="submit" name="submit">Login</button>
           </div>
       </form>
   </div>
 
+  <!-- VENDOR LOGIN FORM -->
   <div id="vendor-login" class="modal form-container">
-    <form class="modal-content animate" method="post">
+    <form class="modal-content animate" enctype="multipart/form-data" method='POST'>
       <div class="close-button-container">
         <span onclick="closeButtonClick()" class="close" title="Close Modal">&times;</span>
       </div>
       <h2>Hey there!</h2>
       <div class="fields-container">
         <div class="username-container">
-        <label class="username-label" for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label class="phonenum-label" for="phonenum"><b>Phone number </b><span id="phone" style="color: red;"></span></label>
+        <input type="tel" placeholder="Enter phone number" name="phonenum" required>
         </div>
 
         <div class="password-container">
@@ -57,7 +59,7 @@
         <input type="password" placeholder="Enter Password" name="psw" required>
         </div>
           
-        <button type="submit">Login</button>
+        <button type="submit" name="submit">Login</button>
       </div>
     </form>
   </div>

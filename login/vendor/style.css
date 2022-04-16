@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 4px;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.content-container {
+  background-color: black;
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  width: 60px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li a:hover {
+  background: #42fbf2;
+  color: #000;
+}
+
+.container {
+  height: 600px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+/* .myButton {
+  padding: 10px;
+  display: grid;
+  float: right;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+} */
+
+.btn-1 {
+  width: 300px;
+  height: 100px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: aquamarine;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+}
+
+.btn-1:hover {
+  box-shadow: inset 300px 0 0 0 blueviolet;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+/* second button */
+.btn-2 {
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: 3px solid #42fbf2;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-2:hover {
+  box-shadow: inset 300px 0 0 0 #4edddd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-1:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #4edddd;
+}
+
+.btn-2:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
