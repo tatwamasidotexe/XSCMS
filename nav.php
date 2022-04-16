@@ -12,9 +12,8 @@
     $db_password = '';
     $connection = mysqli_connect($server, $db_username, $db_password, $database);
 
-    if(mysqli_connect_errno($connection)) {
-        // die "Connection failed ok?. Error: ".mysqli_connect_errno($connection);
-        echo "<script>console.log('errrrrrorrrrr broooooo');</script>";
+    if(!$connection) {
+        die("Connection failed ok?. Error: ".mysqli_connect_error());
     } 
     else {
         // the login process will start
