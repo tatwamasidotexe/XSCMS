@@ -8,7 +8,7 @@
 <body>
 
   <!-- including the php code -->
-  <?php include "nav.php" ; ?>
+  <?php include "login.php" ; ?>
   
   <div class="page-container">
     <div class="login-container">
