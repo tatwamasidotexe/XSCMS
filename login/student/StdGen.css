@@ -119,6 +119,15 @@ a:nth-child(5):hover~.animation {
 
 }
 
+.username {
+  margin-top: 15px;
+  color: #0000FF;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
 .cntdwn label {
   color: #f4f9fb;
 }
@@ -242,9 +251,11 @@ input[type=submit] {
   color: #f4f9fb;
 }
 
-.two p, h2 {
+.two p,
+h2 {
   margin-bottom: 0.5rem;
 }
+
 .row:after {
   content: "";
   display: table;
@@ -289,7 +300,7 @@ input[type=submit] {
 
 }
 
-.btn2 {
+.btn2, .myBtn_multi {
   background-color: #f4f9fb;
   color: #0000FF;
   padding: 3px;
@@ -303,23 +314,27 @@ input[type=submit] {
 
 }
 
-.btn2:hover {
+.btn2:hover, .myBtn_multi:hover {
   background-color: transparent;
   border: 1.5px solid #f4f9fb;
   color: #f4f9fb;
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   padding: 5px;
   left: 0;
   top: 0;
   width: 600px;
   height: 360px;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #4b7bf5e7; 
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #4b7bf5e7;
   border-radius: 8px;
 }
 
@@ -330,14 +345,16 @@ input[type=submit] {
   margin: 0 auto;
 
 }
+
 .modal-content img {
   width: 300px;
   height: 300px;
   align-self: auto;
   border-radius: 8px;
 }
+
 /* The Close Button */
-.close, .close2 {
+.close {
   color: #f4f9fb;
   float: right;
   font-size: 28px;
