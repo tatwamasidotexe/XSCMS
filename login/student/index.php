@@ -40,7 +40,7 @@
   
   <!-- Market -->
   
-  <?php include "statusHandler.php"; ?> 
+  
 
   <div class="market" id="market">
     <div class="marketContain">
@@ -120,7 +120,7 @@
       <div id="Tab 4" class="tabcontent">
       <div class="row">
           <div class="column one">
-            <p><button id="cs" class="btn2">Open Now</button></p>
+            <p><button id="convenienceStore" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -142,6 +142,8 @@
       </div>
     </div>
   </div>
+  <?php include "statusHandler.php"; ?> 
+
   <!-- FAQs -->
   <div class="faq" id="help">
     <div class="faqBox">
