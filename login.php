@@ -88,18 +88,18 @@
             } 
             else {
                 // check if email and pw are in the database
-                $sql = "select * from `vendorinfo` where phone_num = '".$email."' and password = '."."$pw' ;";
+                $sql = "select * from `studentinfo` where emailid = '".$email."' and password = '".$pw."' ;";
                 $result = $connection->query($sql);
 
                 if(!$row = $result->fetch_assoc()) {
                     $validate = FALSE;
-                    // !(phonenum and pw exist in the db and match w each other)
+                    // !(email and pw exist in the db and match w each other)
                     echo "<script>alert('Incorrect email or password. Try again.')</script>";
                 }
                 elseif($validate) {
                     session_start();
                     $_SESSION["loggedin"] = TRUE;
-                    $_SESSION["email"] = $email;
+                    $_SESSION["emailid"] = $email;
                     header("location: login/student");
                 }
 
