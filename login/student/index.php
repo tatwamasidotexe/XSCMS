@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Student Genral</title>
+  <title>Home: Student</title>
   <link rel="stylesheet" href="StdGen.css">
 </head>
 <body>
@@ -16,9 +16,10 @@
     <div class="animation start-home"></div>
   </nav>
   <!-- No of days remaining dial -->
+
   <div class="countdown" id="home">
     <div class="username">
-      <p>Hey <a>Gayatri Rout!</a></p>
+      <p>Hey <span id="userName">Gayatri Rout!</span></p>
     </div>
     <div class="cntdwn">
       <form>
@@ -30,6 +31,7 @@
       </form>
     </div>
   </div>
+  <?php include "usernameHandler.php"; ?> 
   <!-- Meal booking -->
   <div class="mealBook" id="mealBook">
     <div class="container">
@@ -39,9 +41,6 @@
   </div>
   
   <!-- Market -->
-  
-  
-
   <div class="market" id="market">
     <div class="marketContain">
       <div class="tab">
