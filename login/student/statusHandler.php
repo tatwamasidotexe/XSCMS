@@ -1,19 +1,34 @@
 <?php
     session_start();
     require_once "../../configdb.php";
-    // i need a way to get the name of the js function that was called
-    $name_of_js_function = "";
-    $sql = "select status from vendorinfo where phone_num = '".$name_of_js_function."';";
-    $status = $connection->query($sql);
-    if($status == "1") {
-        echo "<script>
-            document.querySelector('.".$name_of_js_function."').textContent = 'Open now';
-        </script>";
+    // find a way to get all the usernames from venderinfo table and form the query
+    // $mess = "select status from vendorinfo where name = 'mess'";
+    // $basant = "select status from vendorinfo where name = 'basant'";
+    // $aditya = "select status from vendorinfo where name = 'aditya'";
+    // $cs = "select status from vendorinfo where name = 'cs'";
+
+    $vendors = array("mess", "basant", "aditya", "cs");
+    $queries = array();
+
+    foreach($vendors as $vendor) {
+        array_push($queries, "select status from vendorinfo where name = '".$vendor."';");
     }
-    else {
-        echo "<script>
-            document.querySelector('.".$name_of_js_function."').textContent = 'Closed now';
-        </script>";
+    $count = 0;
+    foreach ($queries as $query) {
+        $status = $connection->query($query);
+        if($status == "1") {
+            echo "<script>
+                document.getElementById('".$vendors[$count]."').textContent = 'Open now';
+            </script>";
+        }
+        else {
+            echo "<script>
+                document.getElementById('".$vendors[$count]."').textContent = 'Closed now';
+            </script>";
+        }
+        ++$count;
     }
+
+    
     $connection->close();
 ?>

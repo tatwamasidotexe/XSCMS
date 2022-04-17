@@ -53,7 +53,7 @@
       <div id="tab 1" class="tabcontent">
         <div class="row">
           <div class="column one">
-            <p><button id="status" class="btn2 mess" onclick="mess()">Open Now</button></p>
+            <p><button id="mess" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -76,7 +76,7 @@
       <div id="tab 2" class="tabcontent">
         <div class="row">
           <div class="column one">
-            <p><button id="status" class="btn2 basant" onclick="basant()">Open Now</button></p>
+            <p><button id="basant" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi" >See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -97,7 +97,7 @@
       <div id="Tab 3" class="tabcontent">
       <div class="row">
           <div class="column one">
-            <p><button id="status" class="btn2 aditya" onclick="aditya()">Open Now</button></p>
+            <p><button id="aditya" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -120,7 +120,7 @@
       <div id="Tab 4" class="tabcontent">
       <div class="row">
           <div class="column one">
-            <p><button id="status" class="btn2 cs" onclick="cs()">Open Now</button></p>
+            <p><button id="cs" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -184,5 +184,4 @@
 <script type="text/javascript" src="../../scripts/BookBtn.js"></script>
 <script type="text/javascript" src="../../scripts/Tabs.js"></script>
 <script type="text/javascript" src="../../scripts/PopUpMenu.js"></script>
-<script type="text/javascript" src="statusDisplay.js"></script>
 </html>
