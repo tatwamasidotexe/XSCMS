@@ -132,7 +132,7 @@ a:nth-child(5):hover~.animation {
   color: #f4f9fb;
 }
 
-.cntdwn {
+.cntdwn, .dialContainer {
   width: 500px;
   margin: 0;
   border-radius: 8px;
@@ -142,6 +142,7 @@ a:nth-child(5):hover~.animation {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #4B7BF5;
+  /* display: none; */
 }
 
 input[type=text],
@@ -176,6 +177,49 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.dial {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #0000FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.dialText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0
+}
+
+.cntDisplay .displayCnt {
+  font-size: 100px;
+  font-weight: 600;
+  color: #f4f9fb;
+
+}
+
+.daysLeft {
+  font-size: 18px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #f4f9fb;
+}
+
+.brekkie {
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #4B7BF5;
+  padding: 5px;
+  color: #f4f9fb;
+
+}
 /* M E A L - B O O K I N G...................................................................................................*/
 .mealBook {
   height: 6rem;

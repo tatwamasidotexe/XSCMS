@@ -19,7 +19,7 @@
                     <li><a href="logout.php" class="logout-button">log out</a></li>
                 </ul>
             </nav>
-            <?php include "usernameHandler.php"; ?> 
+            <?php include "usernameHandler.php"; ?>
             <div class="container">
                 <button class="btn-1">WE ARE OPEN</button>
                 <button class="btn-2">WE ARE CLOSED</button>

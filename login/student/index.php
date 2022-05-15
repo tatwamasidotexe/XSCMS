@@ -15,19 +15,33 @@
     <a href="logout.php">Log Out</a>
     <div class="animation start-home"></div>
   </nav>
+  <?php include "BFstatus.php"; ?>
   <!-- No of days remaining dial -->
-
   <div class="countdown" id="home">
     <div class="username">
-      <p>Hey <span id="userName">Gayatri Rout!</span></p>
+      <p>Hey <span id="userName"></span></p>
+      <p><b>Welcome to Student XSCS</b></p>
     </div>
-    <div class="cntdwn">
+    <!-- <div id="dialContain" class="dialContainer">
+      <div class="dial">
+        <div class="dialText">
+          <div class="cntDisplay">
+            <p class="displayCnt">15</p>
+          </div>
+          <div class="daysLeft">
+            <p>Days Left</p>
+          </div>
+          <p class="brekkie">Breakfast Count</p>
+        </div>
+      </div>
+    </div> -->
+    <div id="triggerBtn" class="cntdwn">
       <form>
         <label for="total">How many breakfasts did you pay for this month?</label>
-        <input class="cntdwnForm" type="text" id="total">
+        <input class="cntdwnForm" type="text" name="total" id="total" required>
         <label for="consumed">How many breakfasts have you consumed this month?</label>
-        <input class="cntdwnForm" type="text" id="consumed">
-        <input type="submit" value="SUBMIT" />
+        <input class="cntdwnForm" required type="text" id="consumed" name="consumed">
+        <input onclick="toggleFunction()" type="submit" value="SUBMIT" />
       </form>
     </div>
   </div>
@@ -49,10 +63,11 @@
         <button class="tablinks" onclick="openCity(event, 'Tab 3')">Aditya</button>
         <button class="tablinks" onclick="openCity(event, 'Tab 4')">Convenience Store</button>
       </div>
+
       <div id="tab 1" class="tabcontent">
         <div class="row">
           <div class="column one">
-            <p><button id="mess" class="btn2">Open Now</button></p>
+          <p><button id="mess" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -62,6 +77,7 @@
                 <br>
                 <img src="mess menu.jpeg">
               </div>
+
             </div>
           </div>
           <div class="column two">
@@ -69,34 +85,44 @@
             <p><b>Breakfast: </b>8am - 9:45am</p>
             <p><b>Lunch: </b>12:30pm - 2:30pm</p>
             <p><b>Dinner: </b>5pm - 8pm</p>
+            <br>
+            <br>
+            <h2>Contact Vendor</h2>
+            <p id="messPh">9037836745</p>
           </div>
         </div>
       </div>
+
       <div id="tab 2" class="tabcontent">
         <div class="row">
           <div class="column one">
-            <p><button id="basant" class="btn2">Open Now</button></p>
-            <p><button class="myBtn_multi" >See Menu</button></p>
+          <p><button id="basant" class="btn2">Open Now</button></p>
+            <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
                 <img src="basant menu.jpeg">
               </div>
+
             </div>
           </div>
           <div class="column two">
             <h2>Scheduled Timings</h2>
-            <p><b>Breakfast: </b>8am - 9:45am</p>
-            <p><b>Lunch: </b>12:30pm - 2:30pm</p>
-            <p><b>Dinner: </b>5pm - 8pm</p>
+            <p><b>Opening Time: </b>11am</p>
+            <p><b>Closing Time: </b>10pm</p>
+            <br>
+            <br>
+            <h2>Contact Vendor</h2>
+            <p id="messPh">9037836745</p>
           </div>
         </div>
       </div>
+
       <div id="Tab 3" class="tabcontent">
-      <div class="row">
+        <div class="row">
           <div class="column one">
-            <p><button id="aditya" class="btn2">Open Now</button></p>
+          <p><button id="aditya" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
             <div class="modal modal_multi">
               <!-- Modal content -->
@@ -106,18 +132,23 @@
                 <br>
                 <img src="Aditya menu 2.jpeg">
               </div>
+
             </div>
           </div>
           <div class="column two">
             <h2>Scheduled Timings</h2>
-            <p><b>Breakfast: </b>8am - 9:45am</p>
-            <p><b>Lunch: </b>12:30pm - 2:30pm</p>
-            <p><b>Dinner: </b>5pm - 8pm</p>
+            <p><b>Opening Time: </b>10am</p>
+            <p><b>Closing Time: </b>10pm</p>
+            <br>
+            <br>
+            <h2>Contact Vendor</h2>
+            <p id="messPh">9037836745</p>
           </div>
         </div>
       </div>
+
       <div id="Tab 4" class="tabcontent">
-      <div class="row">
+        <div class="row">
           <div class="column one">
             <p><button id="convenienceStore" class="btn2">Open Now</button></p>
             <p><button class="myBtn_multi">See Menu</button></p>
@@ -129,13 +160,17 @@
                 <br>
                 <img src="mess menu.jpeg">
               </div>
+
             </div>
           </div>
           <div class="column two">
             <h2>Scheduled Timings</h2>
-            <p><b>Breakfast: </b>8am - 9:45am</p>
-            <p><b>Lunch: </b>12:30pm - 2:30pm</p>
-            <p><b>Dinner: </b>5pm - 8pm</p>
+            <p><b>Opening Time: </b>12pm</p>
+            <p><b>Closing Time: </b>10pm</p>
+            <br>
+            <br>
+            <h2>Contact Vendor</h2>
+            <p id="messPh">9037836745</p>
           </div>
         </div>
       </div>

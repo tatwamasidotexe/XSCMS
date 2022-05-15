@@ -10,8 +10,9 @@
   <!-- including the php code -->
   <?php include "login.php" ; ?>
   
-  <div class="page-container">
+  <div class="page-container">     
     <div class="login-container">
+      <h3 style="text-align: center; font-size:1.5vw;">XIM Student Convenience Management System</h3>
       <h2><b>Login</b></h2>
       <button id="student-button" onclick="studentButtonClick()" style="width:auto;"><b>STUDENT</b></button>
       <button id="vendor-button" onclick="vendorButtonClick()" style="width:auto;"><b>VENDOR</b></button>
@@ -22,9 +23,9 @@
   <div id="student-login" class="modal form-container">
       <form class="modal-content animate" method="post">
           <div class="close-button-container">
-          <span onclick="closeButtonClick()" class="close" title="Close Modal">&times;</span>
+            <span onclick="closeButtonClick()" class="close" title="Close Modal">&times;</span>
           </div>
-          <h2>Hey there!</h2>
+          <h2>Student Login Form</h2>
           <div class="fields-container">
           <div class="field-container">
               <label for="email"><b>University email ID </b><span id="emailid" style="color: red;"></span></label>
@@ -47,7 +48,7 @@
       <div class="close-button-container">
         <span onclick="closeButtonClick()" class="close" title="Close Modal">&times;</span>
       </div>
-      <h2>Hey there!</h2>
+      <h2>Vendor Login Form</h2>
       <div class="fields-container">
         <div class="username-container">
         <label class="phonenum-label" for="phonenum"><b>Phone number </b><span id="phone" style="color: red;"></span></label>

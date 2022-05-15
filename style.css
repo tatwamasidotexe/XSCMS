@@ -1,31 +1,46 @@
 /* LOGIN-PAGE STYLING */
 body {
-    background-color: #190F45;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='154' height='154' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23a56300' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23c47c00' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23a56300' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23c47c00' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23E49717' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23008f89' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2300ada7' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%2311CCC5' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2300ada7' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23008f89' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%2311CCC5' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23008f89' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%2311CCC5' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2300ada7' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%2311CCC5' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
-    font-family: Arial, Helvetica, sans-serif;}
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/memphis-colorful.png);
+  background-repeat: repeat;
+  background-size: auto;
+  animation: bgSlideAnimationLight 24s linear infinite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes bgSlideAnimationLight {
+  from {
+    background-position: 400px 0;
   }
-  
-  #student-button, #vendor-button {
-    background-color: #ffffff;
-    color:rgba(10, 5, 64, 0.5);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 20%;
-    box-shadow: 2px 5px #fff30d;
-    font-family: 'Roboto Condensed';
+  to {
+    background-position: 0 400px;
   }
+}
   
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+#student-button, #vendor-button {
+  background-color: #46eecf;
+  color:#1c5a4e;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20%;
+  box-shadow: 2px 5px #08004f;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+}
+
   #student-button:hover, #vendor-button:hover {
     /*opacity: 0.8;*/
     color:#03e9f4; 
@@ -68,7 +83,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(249, 243, 243);
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
   }
@@ -78,7 +93,7 @@ body {
     width: 80%;
     border: 1px solid #888;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     font-family: cursive;
@@ -87,29 +102,29 @@ body {
   .modal-content h2 {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: rgb(24, 4, 68);
     text-align: center;
   }
   
   .modal-content .fields-container input {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 16px;
-    color: #fff;
+    color: #000;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   }
   
   .modal-content .fields-container label {
-      position: relative;
-      margin: 10px 0;
-      font-size: 16px;
-      color: #fff;
-      pointer-events: none;
-      transition: .5s;
+    position: relative;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+    pointer-events: none;
+    transition: .5s;
   }
   
   .username-container:focus-within .phonenum-label {
@@ -150,7 +165,7 @@ body {
     position: absolute;
     right: 25px;
     top: 0;
-    color: #000;
+    color: rgb(0, 0, 0);
     font-size: 35px;
     font-weight: bold;
   }
@@ -187,6 +202,8 @@ body {
   }
   
   .page-container {
+      margin: 0;
+      padding: 0;
       height: 100vh;
       width: 100%;
       display: flex;
@@ -194,16 +211,33 @@ body {
       justify-content: center;
       align-items: center;
   }
+
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-logo img{
+      width: 100px;
+      margin-right: 10px;
+  }
+  
+  .page-title {
+      color: rgb(90, 100, 0);
+  }
   
   .login-container {
-      height: 500px;
+      height: 400px;
       width: 300px;
       padding: 50px;
       border: 3px solid slateblue;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color:rgba(245, 253, 253,0.80);
+      align-items: center;
+      background-color:rgba(245, 253, 253, 0.9);
       border-radius:30%;
       box-shadow: 10px 25px;
   }
@@ -228,4 +262,4 @@ body {
   .form-container::before {
     background-color: #190F45;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='154' height='154' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23a56300' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23c47c00' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23a56300' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23c47c00' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23E49717' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23008f89' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%2300ada7' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%2311CCC5' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%2300ada7' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23008f89' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%2311CCC5' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23008f89' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%2311CCC5' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%2300ada7' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%2311CCC5' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
-  }
+  } 

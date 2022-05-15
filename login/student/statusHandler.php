@@ -1,10 +1,5 @@
 <?php
     require_once "../../configdb.php";
-    // find a way to get all the usernames from venderinfo table and form the query
-    // $mess = "select status from vendorinfo where name = 'mess'";
-    // $basant = "select status from vendorinfo where name = 'basant'";
-    // $aditya = "select status from vendorinfo where name = 'aditya'";
-    // $cs = "select status from vendorinfo where name = 'cs'";
 
     $vendors = array("mess", "basant", "aditya", "convenienceStore");
     $queries = array();
