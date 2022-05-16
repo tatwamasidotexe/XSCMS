@@ -30,7 +30,7 @@
       <div class="dial">
         <div class="dialText">
           <div class="cntDisplay">
-            <p class="displayCnt">15</p>
+            <p id="displayCount" class="displayCnt">15</p>
           </div>
           <div class="daysLeft">
             <p>Days Left</p>
@@ -50,6 +50,7 @@
         <input onclick="toggleFunction()" type="submit" value="SUBMIT" />
       </form>
     </div>
+
   </div>
   <!-- INCLUDING MEAL TRACKER SCRIPT -->
   <?php include "mealTracker.php"; ?>
