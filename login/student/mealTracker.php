@@ -1,4 +1,16 @@
+
 <?php
+/* 
+
+THIS SCRIPT CALCULATES AND DISPLAYS THE NUMBER OF 
+BREAKFAST MEALS REMAINING IN THE ONGOING MONTH 
+
+2 inputs are taken from the form: 
+    1. total no. of breakfasts paid for this month,
+    2. no. of breakfasts already consumed in this month
+
+then (1) - (2) gives the no. of paid breakfasts remaining for consumption.
+*/
     function test_input($data) {
         $data = trim($data);
         $data = stripslashes($data);
@@ -11,6 +23,8 @@
         $total = test_input($_POST["total"]);
         $consumed = test_input($_POST["consumed"]);
         $validate = TRUE;
+        
+        // -------------------- VALIDATING INPUTS -------------------------
         if(intval($total) <= 0) {
             $validate = FALSE;
             echo 
@@ -28,6 +42,7 @@
                 ;
         }
 
+        // ---------- DISPLAYINGGG ---------------------------------------------------------
         if($validate) {
             $display = $total - $consumed;
             echo "
