@@ -15,7 +15,7 @@
             <p>Welcome to XSCS Vendor Page!</p>
             <nav>
                 <ul>
-                    <li><a href="#" id="vendorName" class="vendor-name">Vendor</a></li>
+                    <li><a href="" id="vendorName" class="vendor-name">Vendor</a></li>
                     <li><a href="logout.php" class="logout-button">log out</a></li>
                 </ul>
             </nav>
