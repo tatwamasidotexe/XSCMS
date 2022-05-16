@@ -25,9 +25,9 @@
                 <button class="btn-2">WE ARE CLOSED</button>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="footer">
-            <p>Project By <br>
+       <!-- Footer -->
+       <div class="footer">
+            <p>&#169 2022 Project By <br>
                 <a class="link" target="_blank" href="https://github.com/Gtree123/AWD-Project"> Gayatri Rout </a>,
                 <a class="link" target="_blank" href="https://github.com/ManyapuShreya/projecctt/"> Manyapu Shreya </a>
                 <a class="link" target="_blank" href="https://github.com/tatwamasidotexe/XSCMS"> Tatwamasi Mishra </a>,

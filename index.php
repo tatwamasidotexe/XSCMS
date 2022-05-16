@@ -65,6 +65,16 @@
     </form>
   </div>
 
+  <!-- Footer -->
+  <div class="footer">
+            <p>&#169 2022 Project By <br>
+                <a class="link" target="_blank" href="https://github.com/Gtree123/AWD-Project"> Gayatri Rout </a>,
+                <a class="link" target="_blank" href="https://github.com/ManyapuShreya/projecctt/"> Manyapu Shreya </a>
+                <a class="link" target="_blank" href="https://github.com/tatwamasidotexe/XSCMS"> Tatwamasi Mishra </a>,
+                <a class="link" target="_blank" href="https://github.com/Yashikoi/AWD-project"> Yashica Pradhan </a>
+            </p>
+        </div>
+
   <script>
   // Get the modal
   var studentModal = document.getElementById('student-login');
