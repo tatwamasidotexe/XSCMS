@@ -131,7 +131,12 @@ a:nth-child(5):hover~.animation {
 .cntdwn label {
   color: #f4f9fb;
 }
-
+.cntdwn{
+  display: none;
+}
+.dialContainer {
+  display: block;
+}
 .cntdwn, .dialContainer {
   width: 500px;
   margin: 0;
@@ -141,8 +146,8 @@ a:nth-child(5):hover~.animation {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #4B7BF5;
-  /* display: none; */
+  background-color: #4bf584;
+  /* display: block; */
 }
 
 input[type=text],

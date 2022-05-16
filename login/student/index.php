@@ -15,14 +15,18 @@
     <a href="logout.php">Log Out</a>
     <div class="animation start-home"></div>
   </nav>
-  <?php include "BFstatus.php"; ?>
+  
   <!-- No of days remaining dial -->
   <div class="countdown" id="home">
     <div class="username">
       <p>Hey <span id="userName"></span></p>
       <p><b>Welcome to Student XSCS</b></p>
-    </div>
-    <!-- <div id="dialContain" class="dialContainer">
+    </div>    
+    <?php include "usernameHandler.php"; ?> 
+
+    <!--------------------------------- MEAL TRACKER -------------------------------------------------->
+    <!-- MEAL TRACKER DIAL -->
+    <div id="dialContain" class="dialContainer">
       <div class="dial">
         <div class="dialText">
           <div class="cntDisplay">
@@ -34,9 +38,11 @@
           <p class="brekkie">Breakfast Count</p>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <!-- FORM FOR MEAL SPECIFICS -->
     <div id="triggerBtn" class="cntdwn">
-      <form>
+      <form method="post">
         <label for="total">How many breakfasts did you pay for this month?</label>
         <input class="cntdwnForm" type="text" name="total" id="total" required>
         <label for="consumed">How many breakfasts have you consumed this month?</label>
@@ -45,7 +51,10 @@
       </form>
     </div>
   </div>
-  <?php include "usernameHandler.php"; ?> 
+  <!-- INCLUDING MEAL TRACKER SCRIPT -->
+  <?php include "mealTracker.php"; ?>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
   <!-- Meal booking -->
   <div class="mealBook" id="mealBook">
     <div class="container">

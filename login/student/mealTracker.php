@@ -18,6 +18,8 @@ then (1) - (2) gives the no. of paid breakfasts remaining for consumption.
         return $data;
     }
 
+    // --------------- CHECK IF INPUT FIELDS ARE NULL IN DB ----------------
+
     if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $total = test_input($_POST["total"]);
@@ -33,6 +35,7 @@ then (1) - (2) gives the no. of paid breakfasts remaining for consumption.
                     </script>'
                 ;
         }
+        else {echo "<script>console.log('total = {$total}, validation did not happen')</script>";}
         if(intval($consumed) < 0) {
             $validate = FALSE;
             echo 
@@ -40,7 +43,10 @@ then (1) - (2) gives the no. of paid breakfasts remaining for consumption.
                         alert("Enter 0 if no breakfasts consumed this month.");
                     </script>'
                 ;
-        }
+        } else {echo "<script>console.log('consumed = {$consumed}, validation did not happen')</script>";}
+
+        // ------------------ UPDATE DATABASE -----------------------------------------------
+        // $sql = "update studentinfo SET BF_PAID = '{$total}', BF_CONSUMED = '{$consumed}' WHERE studentinfo.EMAILID = '".$_SESSION["emailid"]."'";
 
         // ---------- DISPLAYINGGG ---------------------------------------------------------
         if($validate) {
@@ -50,6 +56,7 @@ then (1) - (2) gives the no. of paid breakfasts remaining for consumption.
                     document.getElementbyClass('displayCnt').textContent = '".$display."';
                     document.querySelector('#triggerBtn').display = 'none';
                     document.querySelector('#dialContain').display = 'block';
+                    console.log('javascript updated')
                 </script>
             ";
         }
