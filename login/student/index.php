@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Home: Student</title>
+  <title>XSCMS: Student</title>
   <link rel="stylesheet" href="StdGen.css">
 </head>
 <body>

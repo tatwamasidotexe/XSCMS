@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-    <title> Hover Buttons</title>
+    <title>XSCMS: Vendor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <?php include "vstatus.php"; ?>
     <div class="page-container">
         <div class="content-container">
-            <p>Welcome to XSCS Vendor Page!</p>
+            <p>Welcome to XSCMS Vendor Page!</p>
             <nav>
                 <ul>
                     <li><a href="" id="vendorName" class="vendor-name">Vendor</a></li>
