@@ -74,6 +74,7 @@
         <button class="tablinks" onclick="openCity(event, 'Tab 4')">Convenience Store</button>
       </div>
 
+      <!-- Mess Tab -->
       <div id="tab 1" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -103,6 +104,7 @@
         </div>
       </div>
 
+      <!-- Basant Tab -->
       <div id="tab 2" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -129,6 +131,7 @@
         </div>
       </div>
 
+      <!-- Aditya Tab -->
       <div id="Tab 3" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -157,6 +160,7 @@
         </div>
       </div>
 
+      <!-- Convenience Store Tab -->
       <div id="Tab 4" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -220,8 +224,13 @@
   </div>
   <!-- Footer -->
   <div class="footer">
-    <p>Project By <br><a class="link" href="#"> Gayatri Rout </a>, <a class="link" href="#"> Manyapu Shreya </a>, <a class="link" href="#"> Tatwamasi Mishra </a>, <a class="link" href="#"> Yashica Pradhan </a></p>
-  </div>
+            <p>&#169 2022 Project By <br>
+                <a class="link" target="_blank" href="https://github.com/Gtree123/AWD-Project"> Gayatri Rout </a>,
+                <a class="link" target="_blank" href="https://github.com/ManyapuShreya/projecctt/"> Manyapu Shreya </a>
+                <a class="link" target="_blank" href="https://github.com/tatwamasidotexe/XSCMS"> Tatwamasi Mishra </a>,
+                <a class="link" target="_blank" href="https://github.com/Yashikoi/AWD-project"> Yashica Pradhan </a>
+            </p>
+        </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../../scripts/contactForm.js"></script>
