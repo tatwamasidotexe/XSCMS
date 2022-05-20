@@ -84,9 +84,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="mess menu.jpeg">
+                <img src="../../assets/mess menu.jpeg">
                 <br>
-                <img src="mess menu.jpeg">
+                <img src="../../assets/mess menu.jpeg">
               </div>
 
             </div>
@@ -114,7 +114,7 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="basant menu.jpeg">
+                <img src="../../assets/basant menu.jpeg">
               </div>
 
             </div>
@@ -141,9 +141,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="Aditya menu.jpeg">
+                <img src="../../assets/Aditya menu.jpeg">
                 <br>
-                <img src="Aditya menu 2.jpeg">
+                <img src="../../assets/Aditya menu 2.jpeg">
               </div>
 
             </div>
@@ -170,9 +170,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="mess menu.jpeg">
+                <img src="../../assets/mess menu.jpeg">
                 <br>
-                <img src="mess menu.jpeg">
+                <img src="../../assets/mess menu.jpeg">
               </div>
 
             </div>
