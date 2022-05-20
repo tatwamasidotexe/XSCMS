@@ -74,6 +74,7 @@
         <button class="tablinks" onclick="openCity(event, 'Tab 4')">Convenience Store</button>
       </div>
 
+      <!-- Mess Tab -->
       <div id="tab 1" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -83,9 +84,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="mess menu.jpeg">
+                <img src="assets/mess menu.jpeg">
                 <br>
-                <img src="mess menu.jpeg">
+                <img src="assets/mess menu.jpeg">
               </div>
 
             </div>
@@ -103,6 +104,7 @@
         </div>
       </div>
 
+      <!-- Basant Tab -->
       <div id="tab 2" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -112,7 +114,7 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="basant menu.jpeg">
+                <img src="assets/basant menu.jpeg">
               </div>
 
             </div>
@@ -129,6 +131,7 @@
         </div>
       </div>
 
+      <!-- Aditya Tab -->
       <div id="Tab 3" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -138,9 +141,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="Aditya menu.jpeg">
+                <img src="assets/Aditya menu.jpeg">
                 <br>
-                <img src="Aditya menu 2.jpeg">
+                <img src="assets/Aditya menu 2.jpeg">
               </div>
 
             </div>
@@ -157,6 +160,7 @@
         </div>
       </div>
 
+      <!-- Convenience Store Tab -->
       <div id="Tab 4" class="tabcontent">
         <div class="row">
           <div class="column one">
@@ -166,9 +170,9 @@
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close close_multi">&times;</span>
-                <img src="mess menu.jpeg">
+                <img src="assets/mess menu.jpeg">
                 <br>
-                <img src="mess menu.jpeg">
+                <img src="assets/mess menu.jpeg">
               </div>
 
             </div>
