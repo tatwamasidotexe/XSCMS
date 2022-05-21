@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="" id="vendorName" class="vendor-name">Vendor</a></li>
-                    <li><a href="logout.php" class="logout-button">log out</a></li>
+                    <li><a href="logout.php" class="logout-button" onclick=" return confirm('Are you sure you want to logout?');">log out</a></li>
                 </ul>
             </nav>
             <?php include "usernameHandler.php"; ?>

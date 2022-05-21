@@ -12,7 +12,7 @@
     <a href="#mealBook">Meal Booking</a>
     <a href="#market">Market</a>
     <a href="#help">Help</a>
-    <a href="logout.php">Log Out</a>
+    <a href="logout.php" onclick=" return confirm('Are you sure you want to logout?');">Log Out</a>
     <div class="animation start-home"></div>
   </nav>
   
