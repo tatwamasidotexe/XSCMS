@@ -12,7 +12,7 @@
   
   <div class="page-container">     
     <div class="login-container">
-      <h3 style="text-align: center; font-size:1.5vw;">XIM Student Convenience Management System</h3>
+      <h1 style="text-align: center; font-size:1.5vw;">XIM Student Convenience Management System</h1>
       <h2><b>Login</b></h2>
       <button id="student-button" onclick="studentButtonClick()" style="width:auto;"><b>STUDENT</b></button>
       <button id="vendor-button" onclick="vendorButtonClick()" style="width:auto;"><b>VENDOR</b></button>
